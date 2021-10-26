@@ -5,6 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "node src/index.js",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
     "postinstall": "tsc",
     "watch-node": "nodemon src/index.ts",
     "watch-ts": "tsc -w"
@@ -20,6 +22,11 @@
     "nodemon": "^2.0.4",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
+  },
+  "engines": { "node": "14.x" },
+  "nodemonConfig": {
+    "ext": "ts",
+    "exec": "npm run build && npm start"
   },
   "author": "Raphael Terrier @R4ph-t",
   "license": "MIT",
