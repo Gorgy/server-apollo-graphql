@@ -4,8 +4,10 @@
   "description": "back-end demo app for Apollo's lift-off course",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts"
+    "start": "node src/index.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon src/index.ts",
+    "watch-ts": "tsc -w"
   },
   "dependencies": {
     "apollo-datasource-rest": "^3.3.0",
