@@ -4,7 +4,7 @@
   "description": "back-end demo app for Apollo's lift-off course",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node src/index.ts",
+    "start": "ts-node src/index.ts",
     "dev": "nodemon src/index.ts"
   },
   "dependencies": {
