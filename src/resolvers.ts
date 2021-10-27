@@ -34,6 +34,10 @@ const resolvers: IResolvers = {
       dataSources.trackAPI.getAuthor(authorId),
     modules: ({ id }, _, { dataSources }) =>
       dataSources.trackAPI.getTrackModules(id),
+    durationInSecond: ({ length }) => length,
+  },
+  Module: {
+    durationInSecond: ({ length }) => length,
   },
 };
 
